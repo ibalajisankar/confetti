@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confetti - Generate random particles</title>
+	<script src="./js/app.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="confetti"></div>
+    <div class="container">Hello! </div>
+
+<script>
+ var confetti = {
+    rows: 20,
+    columns: 20,
+    Opacity: true,
+    Size: true,
+    Rotation: true,
+    Icons: [
+      './confetti/Ellipse.svg',
+      './confetti/Vector.svg',
+      './confetti/Line.svg',
+      './confetti/Polygon.svg',
+      './confetti/Text.svg',
+      './confetti/Star.svg'
+    ],
+    Color : ['#4DA1DA', '#FFFFFF', '#EB7265', '#EB7265', '#A4D77C']
+  };
+  generateConfetti('.confetti',confetti);
+</script>
+</body>
+</html>
